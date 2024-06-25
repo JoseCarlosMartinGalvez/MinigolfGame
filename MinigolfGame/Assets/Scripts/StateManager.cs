@@ -10,6 +10,11 @@ public class StateManager : MonoBehaviour
         SceneManager.LoadSceneAsync(LevelName, LoadSceneMode.Single);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public void ReloadLevel()
     {
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
